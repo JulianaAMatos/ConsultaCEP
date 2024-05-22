@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+     margin: 10px;
+     margin-left: 450px;
+     width: 20px;
+     height: 15px;
+     background-color: rgb(215, 240, 235);
+     
+    }
+
+    
+    h1{
+        
+        margin-left: 40px;
+        margin-top: 80px;
+        align-items: center;
+       display: block;
+
+    }
+    form{
+       padding: 20px 120px;
+       margin-left: 50px;
+       border-radius: 4px;
+       background-color: rgb(4, 176, 67);
+       justify-content: center;
+
+    }
+
+    .controle-forms{
+        position: relative;
+        margin-right: 100px;
+        right: 85px;
+
+
+
+    }
