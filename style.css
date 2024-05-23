@@ -18,7 +18,7 @@ body{
     
     h1{
         
-        margin-left: 35px;
+        margin-left: -85px;
         margin-top: 70px;
         align-items: center;
         padding: 2px;
@@ -29,13 +29,13 @@ body{
     }
     form{
        
-       margin-left: 15px;
+       margin-left: -110px;
        margin-top: 25px;
        width: 12px;
        font-family: Eczar, Arial, Helvetica, sans-serif;
        border-radius: 8px;
        align-items: center;
-       padding: 40px 170px ;
+       padding: 25px 165px ;
        background-color: rgb(105, 128, 201);
 
     }

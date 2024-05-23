@@ -62,9 +62,15 @@ function limpaFormulario(){
 
 }
 
-function PesqRua(uf,localidade,logradouro){
+function PesqRua(logradouro, bairro, localidade,uf){
 
-    const buscarRequisicao = new Request(`https://viacep.com.br/ws/${uf}${localidade}${logradouro}/json/` , {
+    
+    if(CEPpadrao.test(cep)) {
+        document.querySelector('#bairro').setAttribute('readonly', '')
+        document.querySelector('#cidade').setAttribute('readonly', '')
+        document.querySelector('#uf').setAttribute('readonly', '')
+
+    const buscarRequisicao = new Request(`https://viacep.com.br/ws/${logradouro}${bairro}${localidade}${uf}/json/` , {
             "method": "GET",
             "headers":{
             "Content-type": "aplication/json"
@@ -75,9 +81,9 @@ function PesqRua(uf,localidade,logradouro){
         fetch(buscarRequisicao)
             .then(resposta =>  resposta.json())
             .then(resposta => {
-
-                 document.querySelector('#logradouro').value = (resposta.logradouro); //buscar dados atualizados
-                 document.querySelector('#bairro').value = (resposta.bairro);
-                 document.querySelector('#cidade').value = (resposta.localidade);
-                 document.querySelector('#uf').value = (resposta.uf);
-            })}
+            
+                document.querySelectorAll('#cep').value = resposta.cep
+           
+                 
+    })}}
+                 

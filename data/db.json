@@ -1,0 +1,36 @@
+{
+  "endereco": [
+    {
+      "cep": "09434620",
+      "logradouro": "Rua Monções",
+      "bairro": "Quarta Divisão",
+      "cidade": "Ribeirão Pires",
+      "uf": "SP",
+      "id": "3f4e"
+    },
+    {
+      "cep": "03574110",
+      "logradouro": "Rua Embiú",
+      "bairro": "Jardim Santa Maria",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "id": "00be"
+    },
+    {
+      "cep": "08330570",
+      "logradouro": "Rua Escorpião",
+      "bairro": "Cidade Satélite Santa Bárbara",
+      "cidade": "São Paulo",
+      "uf": "SP",
+      "id": "5de3"
+    },
+    {
+      "cep": "04266060",
+      "id": "851a",
+      "logradouro": "Rua Moreira de Godói",
+      "bairro": "Ipiranga",
+      "cidade": "São Paulo",
+      "uf": "SP"
+    }
+  ]
+}
