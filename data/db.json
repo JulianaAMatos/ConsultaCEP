@@ -31,6 +31,62 @@
       "bairro": "Ipiranga",
       "cidade": "São Paulo",
       "uf": "SP"
+    },
+    {
+      "id": "eb36",
+      "cep": "08730500",
+      "logradouro": "Rua Doutor Osmar Marinho Couto ",
+      "bairro": "Centro",
+      "cidade": "Mogi das Cruzes",
+      "uf": "SP"
+    },
+    {
+      "id": "0f99",
+      "cep": "08730500",
+      "logradouro": "Rua Doutor Osmar Marinho Couto ",
+      "bairro": "Centro",
+      "cidade": "Mogi das Cruzers",
+      "uf": "SP"
+    },
+    {
+      "id": "55c4",
+      "cep": "09434630",
+      "logradouro": "Estrada de Sapopemba",
+      "bairro": "Quarta Divisão",
+      "cidade": "Ribeirão Pires",
+      "uf": "SP"
+    },
+    {
+      "id": "dbf6",
+      "cep": "",
+      "logradouro": "",
+      "bairro": "",
+      "cidade": "",
+      "uf": ""
+    },
+    {
+      "id": "8052",
+      "cep": "09434630",
+      "logradouro": "Estrada de Sapopemba",
+      "bairro": "Quarta Divisão",
+      "cidade": "Ribeirão Pires",
+      "uf": "SP"
+    },
+    {
+      "id": "4cfb",
+      "cep": "09434630",
+      "logradouro": "Estrada de Sapopemba",
+      "bairro": "Quarta Divisão",
+      "cidade": "Ribeirão Pires",
+      "uf": "SP"
+    },
+    {
+      "id": "c402",
+      "cep": "09434630",
+      "logradouro": "Rua Monções",
+      "bairro": "",
+      "cidade": "",
+      "uf": ""
     }
   ]
 }

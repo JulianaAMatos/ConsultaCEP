@@ -86,4 +86,41 @@ function PesqRua(logradouro, bairro, localidade,uf){
            
                  
     })}}
+
+    function CadastraCEP(enderecoCompleto){
+
+        // parte1url parte2 https
+        fetch('http://localhost:3000/endereco', {
+            'method': 'POST',
+            'headers':{
+                'Content-type': 'application/json'
+            },
+            "body": JSON.stringify(enderecoCompleto)
+        }). then(resposta => {
+            // if(resposta.ok) window.alert('Endereço cadastrado')
+            // else window.alert('ERRO:'+resposta.status)
+            // operador ternario
+            resposta.ok ? window.alert('Endereço Cadastrado') :
+            window.alert('Erro: '+ resposta.status);
+
+
+    })
+
+    }
+
+    function AtualizarCEP(UppdateCEP){
+
+        fetch('http://localhost:3000/endereco', {
+            'method': 'PATCH',
+            'headers':{
+                'Content-type': 'application/json'
+            },
+            "body": JSON.stringify(UppdateCEP)
+        }). then(resposta => {
+            if(resposta.ok) window.alert('Endereço atualizado')
+            else window.alert('ERRO:'+resposta.status)
+         
+        })
+
+    }
                  

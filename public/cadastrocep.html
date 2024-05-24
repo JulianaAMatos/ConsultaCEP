@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro  CEP</title>
+    <link rel="stylesheet" href="./style.css" >
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <h1>Consulta CEP
+    <span style="font-size: 30px"> &#128270 &#128235</span></h1>
+    
+    <form action="">
+        
+        <div class="controle-forms">
+            <label for="cep">CEP</label>
+            <input type="text" id="cep" >   
+        </div>
+
+        <div class="controle-forms">
+            <label for="logradouro">Logradouro</label>
+            <input  type="text" id="logradouro">
+        </div>
+        
+        <div class="controle-forms">
+            <label for="bairro">Bairro</label>
+            <input type="text" id="bairro">
+            
+        </div>
+        
+        <div class="controle-forms">
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" >
+            
+        </div>
+        
+        <div class="controle-forms">
+            <label for="uf">UF</label>
+            <input type="text" id="uf">
+            
+        </div>
+
+        <div class="CadastrarCEP">
+
+       <button type="button" id="Cadastrar">CADASTRAR CEP</button>
+       
+       <button  type="reset" >LIMPAR</button> 
+       <button type="button" id="Atualizar">Atualizar CEP</button>
+       <!-- tipo de botão fala da funcionalidade dele -->
+
+       </div>
+      
+        
+    </form>
+    <script>
+     document.querySelector('#Cadastrar').addEventListener('click', () =>{
+
+         //construir o endereço, pois ainda não temos
+
+         const enderecoCompleto={
+            "cep":document.querySelector('#cep').value,
+            "logradouro": document.querySelector('#logradouro').value,
+            "bairro": document.querySelector('#bairro').value,
+            "cidade": document.querySelector('#cidade').value,
+            "uf":document.querySelector('#uf').value,
+         }
+
+        CadastraCEP(enderecoCompleto)
+     })
+
+     
+        document.querySelector('#Atualizar').addEventListener('click', () =>{
+            
+        const UppdateCEP={
+            "id":document.querySelector.value,
+            "cep":document.querySelector('#cep').value,
+            "logradouro": document.querySelector('#logradouro').value,
+            "bairro": document.querySelector('#bairro').value,
+            "cidade": document.querySelector('#cidade').value,
+            "uf":document.querySelector('#uf').value,
+        }
+         
+          AtualizarCEP(UppdateCEP)
+        })
+    </script>
+
+  
+    
+</body>
+</html>
