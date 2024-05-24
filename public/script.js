@@ -86,6 +86,7 @@ function PesqRua(logradouro, bairro, localidade,uf){
            
                  
     })}}
+<<<<<<< HEAD:public/script.js
 
     function CadastraCEP(enderecoCompleto){
 
@@ -123,4 +124,6 @@ function PesqRua(logradouro, bairro, localidade,uf){
         })
 
     }
+=======
+>>>>>>> 2abb3334ac2f856f6788b3c49109a3527b31685d:script.js
                  
