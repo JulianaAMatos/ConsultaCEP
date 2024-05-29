@@ -1,11 +1,11 @@
 {
   "endereco": [
     {
-      "cep": "09434620",
-      "logradouro": "Rua Monções",
+      "cep": "09434630",
+      "logradouro": "Estrada de Sapopemba",
       "bairro": "Quarta Divisão",
       "cidade": "Ribeirão Pires",
-      "uf": "SP",
+      "uf": "S",
       "id": "3f4e"
     },
     {
@@ -31,7 +31,6 @@
       "bairro": "Ipiranga",
       "cidade": "São Paulo",
       "uf": "SP"
-<<<<<<< HEAD
     },
     {
       "id": "eb36",
@@ -88,8 +87,22 @@
       "bairro": "",
       "cidade": "",
       "uf": ""
-=======
->>>>>>> 2abb3334ac2f856f6788b3c49109a3527b31685d
+    },
+    {
+      "id": "96ca",
+      "cep": "09434630",
+      "logradouro": "Estrada de Sapopemba",
+      "bairro": "Quarta Divisão",
+      "cidade": "Ribeirão Pires",
+      "uf": "SP"
+    },
+    {
+      "id": "d0ef",
+      "cep": "09434630",
+      "logradouro": "Estrada de Sapopemba",
+      "bairro": "Quarta Divisão",
+      "cidade": "Ribeirão Pires",
+      "uf": "S"
     }
   ]
 }

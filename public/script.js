@@ -86,7 +86,7 @@ function PesqRua(logradouro, bairro, localidade,uf){
            
                  
     })}}
-<<<<<<< HEAD:public/script.js
+
 
     function CadastraCEP(enderecoCompleto){
 
@@ -109,21 +109,42 @@ function PesqRua(logradouro, bairro, localidade,uf){
 
     }
 
-    function AtualizarCEP(UppdateCEP){
+    function AtualizarCEP(endereco){
 
         fetch('http://localhost:3000/endereco', {
             'method': 'PATCH',
             'headers':{
                 'Content-type': 'application/json'
             },
-            "body": JSON.stringify(UppdateCEP)
+            "body": JSON.stringify(endereco)
         }). then(resposta => {
             if(resposta.ok) window.alert('Endereço atualizado')
-            else window.alert('ERRO:'+resposta.status)
+            else window.alert('ERRO:'+ resposta.status)
          
         })
-
+       
+          
+        //    //  document.getItem('SalvarDados').removeEventListener('click', CapturarInformacoesDados)
+         
+        //     const retornoData = JSON.parse(localStorage.getItem("endereco"))
+            
+        //     const CEPencontrado = retornoData.find((userfind) => userfind.idendereco == id)
+         
+        //     document.getElementById("cep").value =CEPencontrado.cep;
+        //     document.getElementById("logradouro").value= CEPencontrado.logradouro;
+        //     document.getElementById("bairro").value= CEPencontrado.bairro;
+        //     document.getElementById("cidade").value= CEPencontrado.cidade;
+        //     document.getElementById("uf").value= CEPencontrado.uf;
+         
+            
+         
+         
     }
-=======
->>>>>>> 2abb3334ac2f856f6788b3c49109a3527b31685d:script.js
-                 
+
+        //  UppdateCEP.put('/endereco/:id', (requisicao,resposta) =>{
+        //     const id = requisicao.padraoCEP.id
+        //     const existeCEP= consultaCEP.find((cep)=> cep.id === id)
+        //  })
+        //     if(!consultaCEP){
+        //         window.alert('CEP Inexistente')
+        //     }

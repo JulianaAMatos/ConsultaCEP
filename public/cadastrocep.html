@@ -48,41 +48,68 @@
        <button  type="reset" >LIMPAR</button> 
        <button type="button" id="Atualizar">Atualizar CEP</button>
        <!-- tipo de botão fala da funcionalidade dele -->
-
-       </div>
+       
+    </div>
       
+    
+</form>
+<script>
+    document.querySelector('#Cadastrar').addEventListener('click', () =>{
         
-    </form>
-    <script>
-     document.querySelector('#Cadastrar').addEventListener('click', () =>{
-
-         //construir o endereço, pois ainda não temos
-
-         const enderecoCompleto={
-            "cep":document.querySelector('#cep').value,
-            "logradouro": document.querySelector('#logradouro').value,
-            "bairro": document.querySelector('#bairro').value,
-            "cidade": document.querySelector('#cidade').value,
-            "uf":document.querySelector('#uf').value,
-         }
-
-        CadastraCEP(enderecoCompleto)
-     })
-
-     
-        document.querySelector('#Atualizar').addEventListener('click', () =>{
+        //construir o endereço, pois ainda não temos
+        
+        const enderecoCompleto={
+            "cep": document.querySelector('#cep').value,
+             "logradouro": document.querySelector('#logradouro').value,
+             "bairro": document.querySelector('#bairro').value,
+             "cidade": document.querySelector('#cidade').value,
+             "uf":document.querySelector('#uf').value
+            }
             
-        const UppdateCEP={
-            "id":document.querySelector.value,
-            "cep":document.querySelector('#cep').value,
-            "logradouro": document.querySelector('#logradouro').value,
-            "bairro": document.querySelector('#bairro').value,
-            "cidade": document.querySelector('#cidade').value,
-            "uf":document.querySelector('#uf').value,
-        }
-         
-          AtualizarCEP(UppdateCEP)
+            CadastraCEP(enderecoCompleto)
         })
+        const endereco=[]
+        
+        document.querySelector('#Atualizar').addEventListener('click',() =>{
+            const objeto ={endereco: 'cep', 'logradouro': 'bairro','uf': 'id'}
+             const array =  Object.entries(objeto).map(([cep, id]) => id);
+console.log(array);
+
+             const UppdateCEP = array.map(informacao =>{
+                 return{
+                "cep": informacao.cep,
+                "logradouro": informacao.logradouro,
+                "bairro": informacao.bairro,
+                "cidade": informacao.cidade,
+                "uf":informacao.uf,
+                "id": informacao.id
+            }
+        })
+
+            const atualizar = UppdateCEP.filter(end => end.cep.some(cep => cep.id == ''));
+           console.log(atualizar)
+
+        //    const cep= document.querySelector('#cep').value;
+        //    const logradouro= document.querySelector('#logradouro').value;
+        //    const bairro= document.querySelector('#bairro').value;
+        //    const cidade= document.querySelector('#cidade').value;
+        //    const uf= document.querySelector('#uf').value;
+           
+           
+        //    endereco.forEach((endereco) => {`
+        //     "cep" ${endereco.cep}
+        //     "logradouro"${endereco.logradouro}
+        //     "bairro" ${endereco.bairro}
+        //     "cidade"${endereco.cidade}
+        //     "uf" ${endereco.uf}
+
+           
+       
+        // `
+        AtualizarCEP(endereco);
+    })
+    
+        
     </script>
 
   
