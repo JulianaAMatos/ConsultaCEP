@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta  CEP</title>
+    <link rel="stylesheet" href="./style.css" >
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <form id="form">
+
+        <img src="do-utilizador.png"  class="usuario"  alt="ícone usuario">
+        <h1>LOGIN
+    
+        </h1>
+    
+
+          <div class="linha"> 
+        <input type="email" id="email" placeholder="Email" required>
+        <span>@gmail.com</span>
+        </div>
+
+       <div class="linha">
+        <input type="password" id="senha" placeholder="Senha" required>
+       <img  src="olho.png"  id="btn">
+        </div>
+        
+        <button class="botao" type="submit">Enviar</button>
+        <a  href="" id="cadastro">Cadastre-se</button>
+    </form>
+
+    <script>
+
+        const senha = document.querySelector(".senha")
+        const btn = document.querySelector("#btn")
+
+        // btn.onclick = () =>
+        // { 
+        //     if(senha.type === 'password')
+        //     {
+        //         senha.type = 'text'
+        //         btn.src='ocultar.png'
+
+        //     console.log('Type password')
+        // }else{
+        //     senha.type = 'password'
+        //     btn.src='mostrar.png'
+        // }}
+
+
+
+        form.addEventListener('submite' ,(event) =>{
+        event.preventDefault()
+       checkInputEmail();
+       checkInputSenha();
+    })
+
+
+  function checkInputEmail(){
+    const userEmailValue = userEmail.value
+    if(userEmailValue === ''){}
+        //mostrar mensagem de erro
+  }
+
+  function checkInputSenha(){
+    const senhaValue = senha.value
+    if(senhaValue === ''){
+        errorInput(senha, "A senha é obrigatória")
+    }else if(senhaValue.length <8){
+        errorInput(senha, "A deve ter mais que oito caracteres")
+
+    }
+  }
+
+    </script>
+</body>
+</html>

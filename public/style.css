@@ -44,7 +44,7 @@ body{
         position: relative;
         margin-right: 30px;
         margin: 8px;
-        right: 120px;
+        right: 115px;
         
        
     }
@@ -59,7 +59,7 @@ body{
     }
 
     .PesqCEP{
-        margin-top: 20px;
+        margin-top: 50px;;
         margin-left: 12px;
         align-items: center;
         width: 110px;
@@ -75,5 +75,91 @@ body{
 
    .PesqCEP:hover{
       background-color: rgb(39, 201, 47);
+   }
+
+   body{
+    padding-top: 30px;
+    align-items: center;
+   }
+
+   form{
+  background-color: aliceblue;
+  padding: 10px;
+  width: 400px;
+  margin-top: 10px;
+  
+   }
+
+   form .linha{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    
+   }
+
+   form input{
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+   }
+
+    form .linha span {
+      position: absolute;
+      margin-left: 140px;
+      color: #555;
+      transform: translateY(-8%);
+   }
+
+   form .linha img{
+      position: absolute;
+      margin-left: 170px;
+      color: #555;
+      transform: translateY(-8%);
+   }
+
+   h1{
+    align-items: center;
+    margin-left: 140px;
+    margin-bottom: 20px;
+    position: relative;
+   }
+
+   .usuario{
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    margin-left: 170px;
+    padding-bottom: 20px;
+    position: absolute;
+   }
+   
+  #cadastro{
+    margin-top: 40px;
+    margin: 160px;
+
+  }
+
+  form .linha img{
+     height: 25px;
+     width: 25px;
+     cursor: pointer;
+   }
+
+
+   .botao{
+    margin-left: 140px;
+    width: 30%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #15b;
+    border-radius: 3px;
+    font-size: 18px;
+    color: aliceblue;
+    cursor: pointer;
    }
 

@@ -108,23 +108,88 @@ function PesqRua(logradouro, bairro, localidade,uf){
     })
 
     }
-
-    function AtualizarCEP(endereco){
-
-        fetch('http://localhost:3000/endereco', {
-            'method': 'PATCH',
-            'headers':{
-                'Content-type': 'application/json'
+    function AtualizarCEP(UppdateCEP){
+    
+        fetch(`http://localhost:3000/endereco/id`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
             },
-            "body": JSON.stringify(endereco)
-        }). then(resposta => {
-            if(resposta.ok) window.alert('Endereço atualizado')
-            else window.alert('ERRO:'+ resposta.status)
-         
+            body: JSON.stringify({
+                titile: cep,
+                body: body,
+                id: id
+            })
         })
+         .then(resposta => {
+            return resposta.json()
+        })
+         .then(data => console.log(data))
+
+    }
+
+
+    
+    btn.onclick = () =>
+        { 
+            if(senha.type === 'password')
+            {
+                senha.type = 'text'
+                btn.src='ocultar.png'
+
+            console.log('Type password')
+        }else{
+            senha.type = 'password'
+            btn.src='olho.png'
+        }}
+
+
+
+//     form.addEventListener('submite' ,(event) =>{
+//         event.preventDefault()
+//        checkInputEmail();
+//        checkInputSenha();
+//     })
+
+
+//   function checkInputEmail(){
+//     const userEmailValue = userEmail.value
+//     if(userEmailValue === ''){}
+//         //mostrar mensagem de erro
+//   }
+
+//   function checkInputSenha(){
+//     const senhaValue = senha.value
+//     if(senhaValue === ''){
+//         errorInput(senha, "A senha é obrigatória")
+//     }else if(senhaValue.length <8){
+//         errorInput(senha, "A deve ter mais que oito caracteres")
+
+//     }
+//   }
+
+    // function AtualizarCEP(UppdateCEP){
+
+    //     fetch('http://localhost:3000', {
+    //         'method': 'PATCH',
+    //         'headers':{
+    //             'Content-type': 'application/json'
+    //         },
+    //         "body": JSON.stringify(UppdateCEP)
+    //     }). then(resposta => resposta.json()){
+    //         console.log(id)
+    //         // if(resposta.ok) window.alert('Endereço atualizado')
+    //         // else window.alert('ERRO:'+ resposta.status)
+         
+    //     }
        
-          
-        //    //  document.getItem('SalvarDados').removeEventListener('click', CapturarInformacoesDados)
+    // }
+
+
+
+
+
+        //   //  document.getItem('SalvarDados').removeEventListener('click', CapturarInformacoesDados)
          
         //     const retornoData = JSON.parse(localStorage.getItem("endereco"))
             
@@ -139,7 +204,7 @@ function PesqRua(logradouro, bairro, localidade,uf){
             
          
          
-    }
+    
 
         //  UppdateCEP.put('/endereco/:id', (requisicao,resposta) =>{
         //     const id = requisicao.padraoCEP.id

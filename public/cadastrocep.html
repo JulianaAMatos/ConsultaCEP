@@ -11,7 +11,7 @@
     <h1>Consulta CEP
     <span style="font-size: 30px"> &#128270 &#128235</span></h1>
     
-    <form action="">
+    <form action=""  id="id" placeholder="id">
         
         <div class="controle-forms">
             <label for="cep">CEP</label>
@@ -38,8 +38,10 @@
         <div class="controle-forms">
             <label for="uf">UF</label>
             <input type="text" id="uf">
-            
+          
         </div>
+
+    
 
         <div class="CadastrarCEP">
 
@@ -68,33 +70,25 @@
             
             CadastraCEP(enderecoCompleto)
         })
-        const endereco=[]
+
+        document.querySelector('#Atualizar').addEventListener('click', () =>{
+              const cep = document.querySelector('#cep')
+              const logradouro = document.querySelector('#logradouro')
+              const bairro= document.querySelector('#bairro')
+              const cidade= document.querySelector('cidade')
+              const uf=document.querySelector('uf')
+              const id= document.getElementById('id')
+             })
+            //  "cep": document.querySelector('#cep').value,
+            //  "logradouro": document.querySelector('#logradouro').value,
+            //  "bairro": document.querySelector('#bairro').value,
+            //  "cidade": document.querySelector('#cidade').value,
+            //  "uf":document.querySelector('#uf').value
+             
         
-        document.querySelector('#Atualizar').addEventListener('click',() =>{
-            const objeto ={endereco: 'cep', 'logradouro': 'bairro','uf': 'id'}
-             const array =  Object.entries(objeto).map(([cep, id]) => id);
-console.log(array);
+//             const atualizar = UppdateCEP.filter(end => end.cep.some(cep => cep.id == ''));
+//            console.log(atualizar)
 
-             const UppdateCEP = array.map(informacao =>{
-                 return{
-                "cep": informacao.cep,
-                "logradouro": informacao.logradouro,
-                "bairro": informacao.bairro,
-                "cidade": informacao.cidade,
-                "uf":informacao.uf,
-                "id": informacao.id
-            }
-        })
-
-            const atualizar = UppdateCEP.filter(end => end.cep.some(cep => cep.id == ''));
-           console.log(atualizar)
-
-        //    const cep= document.querySelector('#cep').value;
-        //    const logradouro= document.querySelector('#logradouro').value;
-        //    const bairro= document.querySelector('#bairro').value;
-        //    const cidade= document.querySelector('#cidade').value;
-        //    const uf= document.querySelector('#uf').value;
-           
            
         //    endereco.forEach((endereco) => {`
         //     "cep" ${endereco.cep}
@@ -106,8 +100,7 @@ console.log(array);
            
        
         // `
-        AtualizarCEP(endereco);
-    })
+    
     
         
     </script>

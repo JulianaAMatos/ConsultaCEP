@@ -103,6 +103,22 @@
       "bairro": "Quarta Divisão",
       "cidade": "Ribeirão Pires",
       "uf": "S"
+    },
+    {
+      "id": "2bce",
+      "cep": "09434630",
+      "logradouro": "Estrada de Sapopemba",
+      "bairro": "Quarta Divisão",
+      "cidade": "Ribeirão Pires",
+      "uf": "SP"
+    },
+    {
+      "id": "f57f",
+      "cep": "09431360",
+      "logradouro": "Salvador Ripoli",
+      "bairro": "Santa Luzia",
+      "cidade": "Ribeirão Pires",
+      "uf": "SP"
     }
   ]
 }
