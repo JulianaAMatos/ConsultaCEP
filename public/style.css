@@ -11,14 +11,14 @@ body{
      margin-left: 600px;
      
      height: 12px;
-     background-color: rgb(171, 196, 191);
+     background-image: url(mapaoficial.avif);
      
     }
 
     
     h1{
         
-        margin-left: -85px;
+        margin-right: 90px;
         margin-top: 70px;
         align-items: center;
         padding: 2px;
@@ -29,35 +29,65 @@ body{
     }
     form{
        
-       margin-left: -110px;
+       margin-left: -120px;
        margin-top: 25px;
-       width: 12px;
+       width: 200px;
+       height: 400px;
        font-family: Eczar, Arial, Helvetica, sans-serif;
        border-radius: 8px;
        align-items: center;
        padding: 25px 165px ;
-       background-color: rgb(105, 128, 201);
+       background-color: rgb(60, 131, 155);
 
     }
 
     .controle-forms{
         position: relative;
-        margin-right: 30px;
+        margin-right: -90px;
         margin: 8px;
         right: 115px;
+        align-items: center;
         
        
     }
 
+    
     input{
         width: 220px;
         margin: 2px;
+        align-items: center;
         height: 25px;
         border-radius: 4px;
+        margin-left: 100px;
         border: none;
 
     }
 
+   label{
+    margin-left: 55px;
+   }
+    .CadastrarCEP{
+
+        display: inline-flex;
+        align-items:center;
+        margin-left:-120px;
+        border-radius: 4px;
+    }
+
+  .botao{
+        display: inline;
+        align-items:center;
+        width: 100px;
+        height: 40px;
+        margin: 4px;
+        border-radius: 8px;
+        background-color: rgb(222, 241, 230);
+  }
+  
+  #sair{
+    background-color: rgb(233, 59, 59);
+    border: none;
+  }
     .PesqCEP{
         margin-top: 50px;;
         margin-left: 12px;
@@ -76,90 +106,4 @@ body{
    .PesqCEP:hover{
       background-color: rgb(39, 201, 47);
    }
-
-   body{
-    padding-top: 30px;
-    align-items: center;
-   }
-
-   form{
-  background-color: aliceblue;
-  padding: 10px;
-  width: 400px;
-  margin-top: 10px;
-  
-   }
-
-   form .linha{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 40px;
-    padding-left: 40px;
-    margin-bottom: 20px;
-    
-   }
-
-   form input{
-    padding: 10px;
-    border: 1px solid #777;
-    border-radius: 5px;
-    padding-right: 10px;
-    margin-bottom: 10px;
-   }
-
-    form .linha span {
-      position: absolute;
-      margin-left: 140px;
-      color: #555;
-      transform: translateY(-8%);
-   }
-
-   form .linha img{
-      position: absolute;
-      margin-left: 170px;
-      color: #555;
-      transform: translateY(-8%);
-   }
-
-   h1{
-    align-items: center;
-    margin-left: 140px;
-    margin-bottom: 20px;
-    position: relative;
-   }
-
-   .usuario{
-    width: 60px;
-    height: 60px;
-    align-items: center;
-    margin-left: 170px;
-    padding-bottom: 20px;
-    position: absolute;
-   }
    
-  #cadastro{
-    margin-top: 40px;
-    margin: 160px;
-
-  }
-
-  form .linha img{
-     height: 25px;
-     width: 25px;
-     cursor: pointer;
-   }
-
-
-   .botao{
-    margin-left: 140px;
-    width: 30%;
-    height: 40px;
-    margin-top: 10px;
-    background-color: #15b;
-    border-radius: 3px;
-    font-size: 18px;
-    color: aliceblue;
-    cursor: pointer;
-   }
-

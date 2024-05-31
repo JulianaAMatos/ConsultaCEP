@@ -127,22 +127,35 @@ function PesqRua(logradouro, bairro, localidade,uf){
          .then(data => console.log(data))
 
     }
+      
+    if(localStorage.getItem('token') == null){
 
+        alert('Você precisa estar logado para acessar essa página')
+        window.location.href='http://127.0.0.1:5500/public/emailcadastro.html'
+    }
 
-    
-    btn.onclick = () =>
-        { 
-            if(senha.type === 'password')
-            {
-                senha.type = 'text'
-                btn.src='ocultar.png'
+    function sair(){
 
-            console.log('Type password')
-        }else{
-            senha.type = 'password'
-            btn.src='olho.png'
-        }}
+        localStorage.removeItem('token')
+        window.location.href='http://127.0.0.1:5500/public/emailcadastro.html'
+    }
+    // function login(){
 
+    //     const usuarios = [{
+    //         login: "Juliana@juliana",
+    //         pass: "123"
+    //  }];
+
+    // const login = document.getElementById('Email').value
+    // const senha = document.getElementById('Senha').value
+
+//     for( let i in usuarios){
+
+//     if(login === usuarios[i].login && senha === usuarios[i].pass){
+//     location.href ="cadastrocep.html"
+//   } else{
+//     alert('ERRO')
+//   }}}
 
 
 //     form.addEventListener('submite' ,(event) =>{

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta  CEP</title>
+    <link rel="stylesheet" href="./style2.css" >
+    <script src="./script3.js" defer></script>
+</head>
+<body>
+    <form id="form">
+
+        <img src="do-utilizador.png"  class="usuario"  alt="ícone usuario">
+        <h1>Cadastrar
+    
+        </h1>
+
+      <div id="msgError"></div>
+      <div id="msgSucess"></div>
+
+      </div>
+        <div class="linha">
+        <label id="labelNome" for="nome" class="label">Nome</label>
+        <input type="text" class="username" id="nome" placeholder="" autocomplete="off" required>
+        
+        
+
+        </div>
+
+        <div class="linha"> 
+        <label id="labelEmail" for="Email" class="label">Email</label>
+        <input type="email" class="email" id="Email" placeholder="" autocomplete="off" required>
+
+        </div>
+
+        <div class="linha">
+         <label id="labelSenha" for="Senha" class="label">Senha</label>
+        <input type="password" class="senha" id="Senha" placeholder="" autocomplete="off" required>
+       <img  src="olho.png"  id="btn">
+        </div>
+
+        <div class="linha">
+           <label id="labelConfirmSenha" for="Senha2" class="label" >Confirme a senha</label>
+        <input type="password" class="senhaconf" id="Senha2" placeholder=""  autocomplete="off">
+       <img  src="olho.png"  id="btnConfirm"> 
+        </div>
+
+        <button class="botao" type="submit"id="btn" onclick="Cadastrar()">Cadastrar</button>
+
+     <script>
+        const senha = document.querySelector(".senha")
+        const btn = document.querySelector("#btn")
+        
+        btn.onclick = () =>
+        { 
+            if(senha.type === 'password')
+            {
+                senha.type = 'text'
+                btn.src='ocultar.png'
+            }else{
+                senha.type = 'password'
+                btn.src='olho.png'
+            }}
+            
+      const senha2= document.querySelector(".senhaconf")
+      const btnConfirm= document.querySelector('#btnConfirm')
+
+      btnConfirm.onclick = () =>
+        { 
+            if(senha2.type === 'password')
+            {
+                senha2.type = 'text'
+                btnConfirm.src='ocultar.png'
+            }else{
+                senha2.type = 'password'
+                btnConfirm.src='olho.png'
+            }}
+
+
+
+    </script>
+    </form>
+</body>
+</html>

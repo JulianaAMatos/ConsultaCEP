@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+     margin: 12px;
+     margin-left: 600px;     
+     height: 12px;
+     background-color: rgb(171, 196, 191);
+     
+    }
+    
+    
+    h1{
+        align-items: center;
+        margin-left: 140px;
+        margin-top: 65px;
+        position: relative;
+       }
+   form{
+  background-color: aliceblue;
+  padding: 13px;
+  width: 400px;
+  height: 350px;
+  margin-top: 150px;
+  border-radius: 12px;
+  
+  
+   }
+.linha{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    padding-left: 40px;
+    margin-top: 20px;
+    
+   } 
+
+form input{
+  
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    padding-right: 110px;
+    margin-right: 70px;
+    background-color: transparent;
+
+   }
+
+    form .linha span {
+      position: absolute;
+      top: 40%;
+      margin-left: 90px;
+      transform: translateY(-66%);
+      color: #555;
+   }
+
+   form .linha img{
+      position: absolute;
+      margin-left: 140px;
+      color: #555;
+      transform: translateY(-8%);
+      height: 25px;
+      width: 25px;
+      cursor: pointer;
+   }
+
+   .usuario{
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    margin-left: 170px;
+    padding-bottom: 20px;
+    position: absolute;
+   }
+
+
+
+   .botao{
+    margin-left: 140px;
+    width: 63%;
+    height: 35px;
+    margin-top: 10px;
+    margin-left: 80px;
+    background-color: rgb(26, 110, 235);
+    border-radius: 6px;
+    font-size: 15px;
+    border: none;
+    color: aliceblue;
+    cursor: pointer;
+
+   }
+
+   .botao:hover{
+    background-color: #15b;
+   }
+ 
+.cadastrarlog{
+    display: flex;
+    margin-top: 6px;
+    margin-left: 40px;
+    font-size: 15px;
+    
+}
+
+#cadastro{
+    margin-left: 4px;
+}
+
+.linha2{
+    margin-top: 5px;
+}
+hr{
+margin: 16px;
+margin-top: 20px;
+}
+
+#msgError{
+    text-align: center;
+    color: #ff0000;
+    background-color: #ffbbbb;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+   }

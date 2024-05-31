@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+     margin: 12px;
+     margin-left: 600px;     
+     height: 12px;
+     background-color: rgb(171, 196, 191);
+     
+    }
+
+   form{
+  background-color: aliceblue;
+  padding: 13px;
+  width: 400px;
+  height: 425px;
+  border-radius: 8px;
+  margin-top: 150px;
+  
+   }
+.linha{
+    display: inline;
+    align-items: center;
+    justify-content: center;
+     margin-left: 30px;
+    padding-left: 40px;
+    margin: 20px;  
+
+    
+   } 
+
+
+    input{
+    padding: 10px;
+    width: 90%;
+    left:-30px;
+    display: inline;
+    border: 0; 
+    border: none;
+    border-bottom: 1px solid #272262;
+    margin:2px;
+    /* border-radius: 20px; */
+    /* margin-bottom: 10px; */
+    margin: 2px;
+    background-color: transparent;
+    outline: none;
+   
+
+   
+   }
+
+   #labelConfirmSenha{
+    margin-top: 2px;
+    /* margin-bottom: 200px; */
+    white-space: nowrap;
+    margin-left: -75px;
+
+    
+   } 
+
+   /* #Senha2{
+    /* margin-top: 20px; */
+    /* margin-left: -120px; */
+    /* margin-bottom: 120px; */
+   
+    label{
+        display: inline-flex;
+        white-space: nowrap;
+        margin-left: -30px;
+    }
+
+
+    form .linha span {
+      
+      color: #555;
+      transform: translateY(-8%);
+   }
+
+   form .linha img{
+      position: absolute;
+      color: #555;
+      transform: translateY(-8%);
+   }
+
+   h1{
+    align-items: center;
+    margin-left: 140px;
+    margin-top: 70px;
+    position: relative;
+   }
+
+   .usuario{
+    width: 60px;
+    height: 60px;
+    align-items: center;
+    margin-left: 170px;
+    padding-bottom: 20px;
+    position: absolute;
+   }
+
+
+  form .linha img{
+     height: 25px;
+     width: 25px;
+     margin-left: 340px;
+     margin-top: -40px;
+     cursor: pointer;
+   }
+
+
+   .botao{
+    margin-left: 70px;
+    width: 60%;
+    height: 40px;
+    margin-top: 10px;
+    background-color: #15b;
+    border-radius: 8px;
+    font-size: 18px;
+    justify-content: center;
+    color: aliceblue;
+    cursor: pointer;
+   }
+ 
+   .botao:hover{
+    background-color: rgb(35, 102, 204);
+   }
+.cadastrarlog{
+    display: flex;
+    margin-top: 20px;
+    
+}
+
+#cadastro{
+    margin-left: 2px;
+}
+
+.linha2{
+    margin-top: 5px;
+}
+
+
+#msgError{
+ text-align: center;
+ color: #ff0000;
+ background-color: #ffbbbb;
+ padding: 10px;
+ border-radius: 4px;
+ display: none;
+}
+
+#msgSucess{
+    text-align: center;
+    color: #00bb00;
+    background-color: #bbffbe;
+    padding: 10px;
+    border-radius: 4px;
+    display: none;
+}
